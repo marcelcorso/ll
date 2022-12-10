@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package ll
 
 type LL struct {
 	Head *llnode
@@ -36,20 +34,4 @@ func (ll *LL) Each(f func(val int)) {
 	for p := &ll.Head; *p != nil; p = &(*p).Next {
 		f((**p).Val)
 	}
-}
-
-func main() {
-	ll := LL{}
-	ll.Insert(4)
-	ll.Insert(8)
-	ll.Insert(2)
-	ll.Insert(9)
-	ll.Insert(888)
-	ll.Insert(-1)
-	ll.Insert(54)
-
-	ll.Each(func(val int) {
-		fmt.Print(val)
-	})
-	fmt.Println("")
 }
