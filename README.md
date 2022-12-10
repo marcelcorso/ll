@@ -16,7 +16,6 @@ import (
 )
 
 l := ll.LL{}
-l.Insert()
 l.Insert(8)
 l.Insert(-1)
 l.Insert(54)
