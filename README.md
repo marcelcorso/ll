@@ -2,6 +2,9 @@ when i feel down i revert to simpler times when i used to get excited about poin
 
 this has a linked list implementation in go because i was bored
 
+it saves stuff in order. 
+
+u use it like dis:
 
 ```go
 package main
